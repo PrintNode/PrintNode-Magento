@@ -19,6 +19,5 @@
         "php": ">=5.2.0"
     },
     "extra": {
-        "magento-root-dir": "/var/www/magento"
     }
 }
