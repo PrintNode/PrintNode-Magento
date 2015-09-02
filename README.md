@@ -13,4 +13,7 @@ This plugin is beta.  If you have any improvements or suggestions please make a 
 * After it has installed, go to your administration page on Magento. Clear your Magento cache and reset administrator permissions (there is an ocassional Magento bug that causes the page not to work without this.)
 * Go to your configuration page on Magento and find the "PrintNode" button on the sidebar. 
 * Put in your API-Key and save it. You can then choose which printer you would like to print to.
+* Change your printing settings to use PrintNode
+
+After this, you will be able to print with PrintNode when printing your desired items. 
 
