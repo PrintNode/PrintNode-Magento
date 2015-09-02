@@ -1,0 +1,35 @@
+Any changes to the original code are here within:
+
+Directories: app/snowcode/Google_Cloud_Print changed to app/PrintNode/CloudPrintAPI
+Anything that was in app/snowcode/Google_Cloud_Print will now be referred to by the replacement directory.
+
+Files:
+app/PrintNode/CloudPrintAPI/Block/Adminhtml/System/Configuration/version.php:
+Changed class name and XML reference to reference new directories and new XML settings.
+
+app/PrintNode/CloudPrintAPI/controllers/Adminhtml/Sales/Order/(all files):
+Changed class names to reference new directories.
+Changed success responses to show we are now printing to PrintNode.
+
+app/PrintNode/CloudPrintAPI/Helper/Config.php:
+Changed class name to reference new directories.
+Changed XML references to reference new XML settings.
+Removed XML_API_PASSWORD as it is not required with PrintNode.
+
+app/PrintNode/CloudPrintAPI/Helper/Connector.php:
+Changed class name to reference new directories.
+Removed references to Google and replaced them with use of PrintNode's API.
+Changed functions to respond to PrintNode's API rather than Google's.
+
+app/PrintNode/CloudPrintAPI/Helper/Data.php:
+Changed class name to reference new directories.
+
+app/PrintNode/CloudPrintAPI/Model/Sales/Order/Pdf/(all files):
+Changed class name to reference new directories.
+
+app/PrintNode/CloudPrintAPI/Model/System/Config/Source/Printers.php:
+Changed class name to reference new directories.
+Changed sort function to list Printers by multiple sorting conditions.
+Changed display of printers, listed by groups of which computer they are attached to.
+
+
